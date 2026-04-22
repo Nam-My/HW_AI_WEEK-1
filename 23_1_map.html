@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8fe189a35886e8c40e5c2389be2c5a68 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8fe189a35886e8c40e5c2389be2c5a68" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8fe189a35886e8c40e5c2389be2c5a68 = L.map(
+                "map_8fe189a35886e8c40e5c2389be2c5a68",
+                {
+                    center: [10.7768, 106.6867],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08ac0e9e4c424de8ee3ed546c5decfc8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_08ac0e9e4c424de8ee3ed546c5decfc8.addTo(map_8fe189a35886e8c40e5c2389be2c5a68);
+        
+    
+            var feature_group_ab3bee077a55b97dcd36cc3bb0a9d7c2 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_2a5a3152dca9a38c6f63b97fa4c62ed9 = L.marker(
+                [10.7768, 106.6867],
+                {
+}
+            ).addTo(feature_group_ab3bee077a55b97dcd36cc3bb0a9d7c2);
+        
+    
+            var icon_a3cb603a041be8bfb6a69ef0563c17aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_387cf69dccb298bb1bdefda788ff1c1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d1398aef599b16b12710173e9a164a9 = $(`<div id="html_8d1398aef599b16b12710173e9a164a9" style="width: 100.0%; height: 100.0%;">UEH</div>`)[0];
+                popup_387cf69dccb298bb1bdefda788ff1c1e.setContent(html_8d1398aef599b16b12710173e9a164a9);
+            
+        
+
+        marker_2a5a3152dca9a38c6f63b97fa4c62ed9.bindPopup(popup_387cf69dccb298bb1bdefda788ff1c1e)
+        ;
+
+        
+    
+    
+            marker_2a5a3152dca9a38c6f63b97fa4c62ed9.bindTooltip(
+                `<div>
+                     UEH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a5a3152dca9a38c6f63b97fa4c62ed9.setIcon(icon_a3cb603a041be8bfb6a69ef0563c17aa);
+            
+    
+            feature_group_ab3bee077a55b97dcd36cc3bb0a9d7c2.addTo(map_8fe189a35886e8c40e5c2389be2c5a68);
+        
+    
+            var feature_group_e11ae6fad43e4a86792e5654ddaaf914 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_c909618896f17e4f8d8f1997e92a81f6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_36ea9705955a675d3fed3cad6195480c = L.marker(
+                [10.7721, 106.6981],
+                {
+}
+            ).addTo(marker_cluster_c909618896f17e4f8d8f1997e92a81f6);
+        
+    
+            var icon_e4dbbc27f5e03181ed240f86f4f294f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_224aef6087c95682e9e417f5839d432b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b2d05bef8d411af1681bbd0ffcfe8ef = $(`<div id="html_3b2d05bef8d411af1681bbd0ffcfe8ef" style="width: 100.0%; height: 100.0%;"><b>Ben Thanh Market</b><br>Trung tâm thương mại - du lịch</div>`)[0];
+                popup_224aef6087c95682e9e417f5839d432b.setContent(html_3b2d05bef8d411af1681bbd0ffcfe8ef);
+            
+        
+
+        marker_36ea9705955a675d3fed3cad6195480c.bindPopup(popup_224aef6087c95682e9e417f5839d432b)
+        ;
+
+        
+    
+    
+            marker_36ea9705955a675d3fed3cad6195480c.bindTooltip(
+                `<div>
+                     Ben Thanh Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_36ea9705955a675d3fed3cad6195480c.setIcon(icon_e4dbbc27f5e03181ed240f86f4f294f4);
+            
+    
+            var marker_534aeb84459e638c2d1f6d39d99f4c30 = L.marker(
+                [10.7648, 106.684],
+                {
+}
+            ).addTo(marker_cluster_c909618896f17e4f8d8f1997e92a81f6);
+        
+    
+            var icon_fdf27e32063357293550a7013b1b737c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b53e495496385555e58bda0e30031c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9051462becf7b8e47aaf6021e60ff9a9 = $(`<div id="html_9051462becf7b8e47aaf6021e60ff9a9" style="width: 100.0%; height: 100.0%;"><b>Tu Du Hospital</b><br>Bệnh viện lớn gần trung tâm</div>`)[0];
+                popup_7b53e495496385555e58bda0e30031c1.setContent(html_9051462becf7b8e47aaf6021e60ff9a9);
+            
+        
+
+        marker_534aeb84459e638c2d1f6d39d99f4c30.bindPopup(popup_7b53e495496385555e58bda0e30031c1)
+        ;
+
+        
+    
+    
+            marker_534aeb84459e638c2d1f6d39d99f4c30.bindTooltip(
+                `<div>
+                     Tu Du Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_534aeb84459e638c2d1f6d39d99f4c30.setIcon(icon_fdf27e32063357293550a7013b1b737c);
+            
+    
+            var marker_531b76ebb000157ec2e0e65b0e6976e2 = L.marker(
+                [10.779, 106.6923],
+                {
+}
+            ).addTo(marker_cluster_c909618896f17e4f8d8f1997e92a81f6);
+        
+    
+            var icon_b13a32300b03f54d2627ca5c78d35e1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6510b95d25497b09f697fcdeeb371d0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87eddd964ed9626d95bca49bf203043e = $(`<div id="html_87eddd964ed9626d95bca49bf203043e" style="width: 100.0%; height: 100.0%;"><b>Tao Dan Park</b><br>Không gian công cộng</div>`)[0];
+                popup_6510b95d25497b09f697fcdeeb371d0a.setContent(html_87eddd964ed9626d95bca49bf203043e);
+            
+        
+
+        marker_531b76ebb000157ec2e0e65b0e6976e2.bindPopup(popup_6510b95d25497b09f697fcdeeb371d0a)
+        ;
+
+        
+    
+    
+            marker_531b76ebb000157ec2e0e65b0e6976e2.bindTooltip(
+                `<div>
+                     Tao Dan Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_531b76ebb000157ec2e0e65b0e6976e2.setIcon(icon_b13a32300b03f54d2627ca5c78d35e1a);
+            
+    
+            var marker_566c20e3575d327e18935a2141c5e614 = L.marker(
+                [10.782, 106.6833],
+                {
+}
+            ).addTo(marker_cluster_c909618896f17e4f8d8f1997e92a81f6);
+        
+    
+            var icon_bee47764666ea43729c3517da51b7e7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5753dff2b5e8396303730b6e7dd5cccd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70d21dbb9dcc40c6c119f1cb6eb5ccc9 = $(`<div id="html_70d21dbb9dcc40c6c119f1cb6eb5ccc9" style="width: 100.0%; height: 100.0%;"><b>District 3 People's Committee</b><br>Cơ quan hành chính</div>`)[0];
+                popup_5753dff2b5e8396303730b6e7dd5cccd.setContent(html_70d21dbb9dcc40c6c119f1cb6eb5ccc9);
+            
+        
+
+        marker_566c20e3575d327e18935a2141c5e614.bindPopup(popup_5753dff2b5e8396303730b6e7dd5cccd)
+        ;
+
+        
+    
+    
+            marker_566c20e3575d327e18935a2141c5e614.bindTooltip(
+                `<div>
+                     District 3 People's Committee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_566c20e3575d327e18935a2141c5e614.setIcon(icon_bee47764666ea43729c3517da51b7e7f);
+            
+    
+            var marker_39695f95941df124833430ca8fefa059 = L.marker(
+                [10.7696, 106.6905],
+                {
+}
+            ).addTo(marker_cluster_c909618896f17e4f8d8f1997e92a81f6);
+        
+    
+            var icon_79aefbdfb85439df27613d6d212928ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4db159342fc758120e3088521a9dcb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d93baeed6ace76640f9ed1f46f3172de = $(`<div id="html_d93baeed6ace76640f9ed1f46f3172de" style="width: 100.0%; height: 100.0%;"><b>Bus stop area</b><br>Điểm trung chuyển giao thông</div>`)[0];
+                popup_c4db159342fc758120e3088521a9dcb9.setContent(html_d93baeed6ace76640f9ed1f46f3172de);
+            
+        
+
+        marker_39695f95941df124833430ca8fefa059.bindPopup(popup_c4db159342fc758120e3088521a9dcb9)
+        ;
+
+        
+    
+    
+            marker_39695f95941df124833430ca8fefa059.bindTooltip(
+                `<div>
+                     Bus stop area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_39695f95941df124833430ca8fefa059.setIcon(icon_79aefbdfb85439df27613d6d212928ee);
+            
+    
+            marker_cluster_c909618896f17e4f8d8f1997e92a81f6.addTo(feature_group_e11ae6fad43e4a86792e5654ddaaf914);
+        
+    
+            feature_group_e11ae6fad43e4a86792e5654ddaaf914.addTo(map_8fe189a35886e8c40e5c2389be2c5a68);
+        
+    
+            var tile_layer_2876644a98220f84bf76aff8540fb240 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_71b827a530e51c5fdc3fda42a674035b = new L.Control.MiniMap(
+                tile_layer_2876644a98220f84bf76aff8540fb240,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": false,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_8fe189a35886e8c40e5c2389be2c5a68.addControl(mini_map_71b827a530e51c5fdc3fda42a674035b);
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_8fe189a35886e8c40e5c2389be2c5a68);
+        
+    
+            var layer_control_89cb9aea2b25f856fb9b6a861cfdbc16_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_08ac0e9e4c424de8ee3ed546c5decfc8,
+                },
+                overlays :  {
+                    "UEH" : feature_group_ab3bee077a55b97dcd36cc3bb0a9d7c2,
+                    "Public places" : feature_group_e11ae6fad43e4a86792e5654ddaaf914,
+                },
+            };
+            let layer_control_89cb9aea2b25f856fb9b6a861cfdbc16 = L.control.layers(
+                layer_control_89cb9aea2b25f856fb9b6a861cfdbc16_layers.base_layers,
+                layer_control_89cb9aea2b25f856fb9b6a861cfdbc16_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_8fe189a35886e8c40e5c2389be2c5a68);
+
+        
+</script>
+</html>

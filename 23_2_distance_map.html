@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5fa78419b425f063999000b1c03ed594 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5fa78419b425f063999000b1c03ed594" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5fa78419b425f063999000b1c03ed594 = L.map(
+                "map_5fa78419b425f063999000b1c03ed594",
+                {
+                    center: [10.7768, 106.6867],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c60c453bc0ef402372358094fb2dc17a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c60c453bc0ef402372358094fb2dc17a.addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var marker_a2fc207366583f1d86c173d65bdd6d20 = L.marker(
+                [10.7768, 106.6867],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_7726d5fd9fe9aada8982b7899124fc4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f2301a320794af2e64c85ef6dbe6cc8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0035edb23ca10c0c9aacb4fb5370708c = $(`<div id="html_0035edb23ca10c0c9aacb4fb5370708c" style="width: 100.0%; height: 100.0%;">Center</div>`)[0];
+                popup_4f2301a320794af2e64c85ef6dbe6cc8.setContent(html_0035edb23ca10c0c9aacb4fb5370708c);
+            
+        
+
+        marker_a2fc207366583f1d86c173d65bdd6d20.bindPopup(popup_4f2301a320794af2e64c85ef6dbe6cc8)
+        ;
+
+        
+    
+    
+                marker_a2fc207366583f1d86c173d65bdd6d20.setIcon(icon_7726d5fd9fe9aada8982b7899124fc4e);
+            
+    
+            var marker_ab2245ba29cddf801394229e9997cd84 = L.marker(
+                [10.7725301, 106.6980365],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_7365672540ac116c5560a306c6c82f95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99b22aa6338f57edec9135259a2a502c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa62a87bed890a1c0461506f9d03fa9a = $(`<div id="html_fa62a87bed890a1c0461506f9d03fa9a" style="width: 100.0%; height: 100.0%;">Ben Thanh Market, Ho Chi Minh City<br>1.33 km</div>`)[0];
+                popup_99b22aa6338f57edec9135259a2a502c.setContent(html_fa62a87bed890a1c0461506f9d03fa9a);
+            
+        
+
+        marker_ab2245ba29cddf801394229e9997cd84.bindPopup(popup_99b22aa6338f57edec9135259a2a502c)
+        ;
+
+        
+    
+    
+            marker_ab2245ba29cddf801394229e9997cd84.bindTooltip(
+                `<div>
+                     Ben Thanh Market, Ho Chi Minh City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab2245ba29cddf801394229e9997cd84.setIcon(icon_7365672540ac116c5560a306c6c82f95);
+            
+    
+            var marker_1be55444d625eea7ec958223f8929bbc = L.marker(
+                [10.8179793, 106.6562645],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_b329396cafaa2e03973a7cb9d58463ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0962fe5e60b9307009a5e442c65d6ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d76a8a54ae5daa3f04d14ad8b9ba164c = $(`<div id="html_d76a8a54ae5daa3f04d14ad8b9ba164c" style="width: 100.0%; height: 100.0%;">Tan Son Nhat Airport, Ho Chi Minh City<br>5.64 km</div>`)[0];
+                popup_e0962fe5e60b9307009a5e442c65d6ff.setContent(html_d76a8a54ae5daa3f04d14ad8b9ba164c);
+            
+        
+
+        marker_1be55444d625eea7ec958223f8929bbc.bindPopup(popup_e0962fe5e60b9307009a5e442c65d6ff)
+        ;
+
+        
+    
+    
+            marker_1be55444d625eea7ec958223f8929bbc.bindTooltip(
+                `<div>
+                     Tan Son Nhat Airport, Ho Chi Minh City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1be55444d625eea7ec958223f8929bbc.setIcon(icon_b329396cafaa2e03973a7cb9d58463ff);
+            
+    
+            var marker_cf2b9ab31efec85a154bdf81a6c97643 = L.marker(
+                [10.7830141, 106.6948927],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_9c2242096c0f50e452b030cc6da2be3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f121f4dd675c5b14c5a0523095fa8aef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0050cf93c74aa4b6123acabcf723c802 = $(`<div id="html_0050cf93c74aa4b6123acabcf723c802" style="width: 100.0%; height: 100.0%;">University of Economics Ho Chi Minh City<br>1.13 km</div>`)[0];
+                popup_f121f4dd675c5b14c5a0523095fa8aef.setContent(html_0050cf93c74aa4b6123acabcf723c802);
+            
+        
+
+        marker_cf2b9ab31efec85a154bdf81a6c97643.bindPopup(popup_f121f4dd675c5b14c5a0523095fa8aef)
+        ;
+
+        
+    
+    
+            marker_cf2b9ab31efec85a154bdf81a6c97643.bindTooltip(
+                `<div>
+                     University of Economics Ho Chi Minh City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf2b9ab31efec85a154bdf81a6c97643.setIcon(icon_9c2242096c0f50e452b030cc6da2be3e);
+            
+    
+            var marker_f72b211834c64a9ea46f0d3732a79e52 = L.marker(
+                [10.7770348, 106.695488],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_bb155f48c70b196c8219d700e4291c34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31ffafe1c45f5864442b80c4c2f51ccc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60d3ea08aa47b8daa36f96f78dcdb991 = $(`<div id="html_60d3ea08aa47b8daa36f96f78dcdb991" style="width: 100.0%; height: 100.0%;">Independence Palace, Ho Chi Minh City<br>0.96 km</div>`)[0];
+                popup_31ffafe1c45f5864442b80c4c2f51ccc.setContent(html_60d3ea08aa47b8daa36f96f78dcdb991);
+            
+        
+
+        marker_f72b211834c64a9ea46f0d3732a79e52.bindPopup(popup_31ffafe1c45f5864442b80c4c2f51ccc)
+        ;
+
+        
+    
+    
+            marker_f72b211834c64a9ea46f0d3732a79e52.bindTooltip(
+                `<div>
+                     Independence Palace, Ho Chi Minh City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f72b211834c64a9ea46f0d3732a79e52.setIcon(icon_bb155f48c70b196c8219d700e4291c34);
+            
+    
+            var marker_c978a6af54c03f97ba16ccda10d2723e = L.marker(
+                [10.7799557, 106.6999921],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_9c7a451111ebd6ea5b6a2d774d0c7c81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab15d9350926845aae72b24d5e3c0923 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a0d73d5dc0e01d66acb6739d4940526 = $(`<div id="html_6a0d73d5dc0e01d66acb6739d4940526" style="width: 100.0%; height: 100.0%;">Saigon Central Post Office, Ho Chi Minh City<br>1.50 km</div>`)[0];
+                popup_ab15d9350926845aae72b24d5e3c0923.setContent(html_6a0d73d5dc0e01d66acb6739d4940526);
+            
+        
+
+        marker_c978a6af54c03f97ba16ccda10d2723e.bindPopup(popup_ab15d9350926845aae72b24d5e3c0923)
+        ;
+
+        
+    
+    
+            marker_c978a6af54c03f97ba16ccda10d2723e.bindTooltip(
+                `<div>
+                     Saigon Central Post Office, Ho Chi Minh City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c978a6af54c03f97ba16ccda10d2723e.setIcon(icon_9c7a451111ebd6ea5b6a2d774d0c7c81);
+            
+    
+            var marker_9dcaed4105ede93ac19acfbc4b30caa9 = L.marker(
+                [10.7748307, 106.6932718],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_94c505745c08325dbdd4dcbd308c7199 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_992c541cc98a3af9c9d1e815e5b62264 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b98e506d36d2c54533c82249201ebaf9 = $(`<div id="html_b98e506d36d2c54533c82249201ebaf9" style="width: 100.0%; height: 100.0%;">Tao Dan Park, Ho Chi Minh City<br>0.75 km</div>`)[0];
+                popup_992c541cc98a3af9c9d1e815e5b62264.setContent(html_b98e506d36d2c54533c82249201ebaf9);
+            
+        
+
+        marker_9dcaed4105ede93ac19acfbc4b30caa9.bindPopup(popup_992c541cc98a3af9c9d1e815e5b62264)
+        ;
+
+        
+    
+    
+            marker_9dcaed4105ede93ac19acfbc4b30caa9.bindTooltip(
+                `<div>
+                     Tao Dan Park, Ho Chi Minh City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9dcaed4105ede93ac19acfbc4b30caa9.setIcon(icon_94c505745c08325dbdd4dcbd308c7199);
+            
+    
+            var marker_01b4110da264b36bc5e9548935660c91 = L.marker(
+                [10.7687267, 106.6858975],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_fca401bd84b43ee7a0efc2a230bbaee7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c61f798720b153a3b60a71ad1493bf63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0dc97f88411e738cf4540f062403841 = $(`<div id="html_f0dc97f88411e738cf4540f062403841" style="width: 100.0%; height: 100.0%;">Tu Du Hospital, Ho Chi Minh City<br>0.90 km</div>`)[0];
+                popup_c61f798720b153a3b60a71ad1493bf63.setContent(html_f0dc97f88411e738cf4540f062403841);
+            
+        
+
+        marker_01b4110da264b36bc5e9548935660c91.bindPopup(popup_c61f798720b153a3b60a71ad1493bf63)
+        ;
+
+        
+    
+    
+            marker_01b4110da264b36bc5e9548935660c91.bindTooltip(
+                `<div>
+                     Tu Du Hospital, Ho Chi Minh City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01b4110da264b36bc5e9548935660c91.setIcon(icon_fca401bd84b43ee7a0efc2a230bbaee7);
+            
+    
+            var marker_3dacefc164ff0f13036928f6cfe5deeb = L.marker(
+                [10.7725, 106.698],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_1eabb891c3ff95da262f4cbc6d2b0910 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87e56a267bf74c76723839a4a2e8dfd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ca1df93b39a13118c9e32ab4bd5b6f0 = $(`<div id="html_7ca1df93b39a13118c9e32ab4bd5b6f0" style="width: 100.0%; height: 100.0%;">District 1 People's Committee, Ho Chi Minh City<br>1.32 km</div>`)[0];
+                popup_87e56a267bf74c76723839a4a2e8dfd3.setContent(html_7ca1df93b39a13118c9e32ab4bd5b6f0);
+            
+        
+
+        marker_3dacefc164ff0f13036928f6cfe5deeb.bindPopup(popup_87e56a267bf74c76723839a4a2e8dfd3)
+        ;
+
+        
+    
+    
+            marker_3dacefc164ff0f13036928f6cfe5deeb.bindTooltip(
+                `<div>
+                     District 1 People's Committee, Ho Chi Minh City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3dacefc164ff0f13036928f6cfe5deeb.setIcon(icon_1eabb891c3ff95da262f4cbc6d2b0910);
+            
+    
+            var marker_a47f06031074a444e729d8d6bba04ae8 = L.marker(
+                [10.8776323, 106.6418865],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_72b730dd357393e796172f419e01ade8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9a70050371180bd0068f87af85f2816 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d2ffd6dfdf830f58bfdcba8a157156d = $(`<div id="html_4d2ffd6dfdf830f58bfdcba8a157156d" style="width: 100.0%; height: 100.0%;">Ben Thanh Bus Station, Ho Chi Minh City<br>12.18 km</div>`)[0];
+                popup_c9a70050371180bd0068f87af85f2816.setContent(html_4d2ffd6dfdf830f58bfdcba8a157156d);
+            
+        
+
+        marker_a47f06031074a444e729d8d6bba04ae8.bindPopup(popup_c9a70050371180bd0068f87af85f2816)
+        ;
+
+        
+    
+    
+            marker_a47f06031074a444e729d8d6bba04ae8.bindTooltip(
+                `<div>
+                     Ben Thanh Bus Station, Ho Chi Minh City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a47f06031074a444e729d8d6bba04ae8.setIcon(icon_72b730dd357393e796172f419e01ade8);
+            
+    
+            var marker_83da88fe1f408b599c86ea611e6119fa = L.marker(
+                [10.8006456, 106.6152276],
+                {
+}
+            ).addTo(map_5fa78419b425f063999000b1c03ed594);
+        
+    
+            var icon_b7d2005f93f37f687a3b414f3f1f72b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7087323535534ea29495bcc2cea37f34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ad09d5ba834408fcac134297c78ebb5 = $(`<div id="html_8ad09d5ba834408fcac134297c78ebb5" style="width: 100.0%; height: 100.0%;">AEON Mall Tan Phu, Ho Chi Minh City<br>8.25 km</div>`)[0];
+                popup_7087323535534ea29495bcc2cea37f34.setContent(html_8ad09d5ba834408fcac134297c78ebb5);
+            
+        
+
+        marker_83da88fe1f408b599c86ea611e6119fa.bindPopup(popup_7087323535534ea29495bcc2cea37f34)
+        ;
+
+        
+    
+    
+            marker_83da88fe1f408b599c86ea611e6119fa.bindTooltip(
+                `<div>
+                     AEON Mall Tan Phu, Ho Chi Minh City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83da88fe1f408b599c86ea611e6119fa.setIcon(icon_b7d2005f93f37f687a3b414f3f1f72b8);
+            
+</script>
+</html>
